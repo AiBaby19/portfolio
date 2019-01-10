@@ -1,0 +1,51 @@
+.container {
+    display: flex ;
+    flex-direction: column ;
+    text-align: center;
+}
+
+.form {
+  margin: 0 auto;
+  width: 39%;
+  text-align: left;
+  color: #e5e5e5;
+}
+
+*:focus {
+  outline: none;
+}
+
+.placeholderDesign {
+  border: none;
+  border-bottom: solid 0.2px #9055fb;
+  /* boxShadow: '0px 3px 12px 0px rgba(155, 155, 163, 1)'; */
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 60px;
+  background-color: #FCFCFC;
+}
+
+.btn-contact {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 120px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #ffaa19;
+    color: white;
+    font-size: 16px;
+}
+
+.social-icons-div {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  width: 150px;
+}
+
+
