@@ -29,7 +29,7 @@ class Contact extends Component {
     async sendEmail(name, email, message) {
         // if ()
         if (!name || !email.includes('@') || !message) {
-            return alert("Please fill all the form")
+            return alert("Please fill all the form correctly")
         }
 
         await fetch('/contact/send', {
