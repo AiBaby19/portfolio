@@ -4,6 +4,9 @@ import Notification from '../thankyoupage/Notification';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
+const validator = require("email-validator");
+
+
 class Contact extends Component {
     constructor() {
         super();
@@ -27,9 +30,15 @@ class Contact extends Component {
     }
 
     async sendEmail(name, email, message) {
-        // if ()
-        if (!name || !email.includes('@') || !message) {
-            return alert("Please fill all the form correctly")
+       
+        if (!name || !email || !message) {;
+            toast.error("Please fill all the form")
+            return;
+        }
+
+        if (validator.validate(email) === false) {
+            toast.error("Please enter a valid email");
+            return;
         }
 
         await fetch('/contact/send', {
@@ -60,7 +69,6 @@ class Contact extends Component {
                 link: "https://www.linkedin.com/in/dror-dvash/"
             }
         ]
-
         const placeHolders = [
             {
                 type: "text",
@@ -98,17 +106,15 @@ class Contact extends Component {
                             placeholder={placeholder}
                             value={value}
                             onChange={onChange}
-                            className="placeholderDesign"
-                            required/>)
+                            className="placeholderDesign"/>)
                     })}
 
                     <button
                         className="btn-contact"
-                        type="submit"
+                        type="button"
                         onClick={() => this.sendEmail(this.state.name, this.state.email, this.state.message)}>
                         Send
                     </button>
-
                 </form>
 
                 <div className="social-icons-div">
@@ -124,9 +130,7 @@ class Contact extends Component {
                             onClick=
                             { () => window.open(link) }/>)
                     })}
-
                 </div>
-
             </div>
         );
     }
