@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 //prod.JS  PRODUCTION KEYS HERE
->>>>>>> ed0e0b95841f1fa7b0288ee67ccba4cda7d61f08
 module.exports = {
   user: process.env.USER,
   pass: process.env.PASS,

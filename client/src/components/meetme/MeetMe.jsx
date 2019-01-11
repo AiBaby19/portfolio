@@ -1,34 +1,12 @@
 import React, {Component} from 'react';
 import Modal from '../modal/Modal';
-// import {observer, inject} from 'mobx-react';
 import './meetme.css';
 
-const showSkillsList = {
-    height: '360px',
-    backgroundColor: 'white',
-    width: '25%',
-    border: 'solid 0.2px #9055fb',
-    boxShadow: '0px 3px 12px 0px rgba(155, 155, 163, 1)',
-    zIndex: '0'
-}
 
+//rotating the problem solving icon
 const rotate = {
-    // -ms-filter: "FlipH"; -moz-transform: scaleX(-1); -o-transform: scaleX(-1);
-    // -webkit-transform: scaleX(-1);
     transform: 'scaleX(-1)',
     filter: 'FlipH'
-}
-
-const numberIcons = {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    margin: '0 auto',
-    marginTop: '15px',
-    width: 'auto',
-    maxWidth: '90%',
-    textAlign: 'left',
-    alignItems: 'center'
 }
 
 
@@ -44,10 +22,54 @@ const certifications = [
     details: 'Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. The more kata the programmer complete the higher his rank goes.',bigImg:'https://www.codewars.com/users/Dash_9/badges/large', bigImgAlt: 'codwarsBig'}
   ]
 
+const techSkills = [
+    {
+        skill: 'HTML & CSS',
+        img: '/img/html5.svg',
+        perc: '95%'
+    },
+    {
+        skill: 'JS & ES6',
+        img: '/img/javascript.svg',
+        perc: '95%'
+    },
+    {
+        skill: 'REACT',
+        img: '/img/react.svg',
+        perc: '95%'
+    },
+    {
+        skill: 'NODEJS',
+        img: '/img/nodejs.svg',
+        perc: '95%'
+    }
+]
 
-// @inject(allStores => ({certifications: allStores.store.certifications}))
+const softSkills = [
+    {
+        skill: 'UX/UI',
+        img: '/img/ux.svg',
+        perc: '95%'
+    },
+    {
+        skill: 'AUTODIDACT',
+        img: '/img/selflearner.svg',
+        perc: '95%'
+    },
+    {
+        skill: 'TEAM PLAYER',
+        img: '/img/teamplayer.svg',
+        perc: '95%'
+    },
+    {
+        skill: 'PROBLEM SOLVING',
+        img: '/img/think.svg',
+        perc: '95%',
+        style: rotate
+    }
+]
 
-// @observer
+
 class MeetMe extends Component {
     state = {
         isModal: false,
@@ -64,176 +86,56 @@ class MeetMe extends Component {
     render() {
         return (
             <div>
-                <div
-                    style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    flexDirection: 'column'
-                }}>
-                    <h3
-                        style={{
-                        textAlign: 'center',
-                        marginTop: '-20px',
-                        textShadow: '0px 3px 12px 0px rgba(155, 155, 163, 1)'
-                    }}>Hi, my name is Dror.</h3>
+                <div className="container">
+                    <h3 className="headline-name">
+                        Hi, my name is Dror.</h3>
                     <br/>
-                    <div
-                        className="colorRow"
-                        style={{
-                        backgroundColor: '#F4F8F9',
-                        height: '200px',
-                        zIndex: '-10',
-                        textAlign: 'center',
-                        opacity: '.2'
-                    }}></div>
-
-                    <p
-                        className="introduction"
-                        style={{
-                        margin: '0 auto',
-                        marginTop: '-180px',
-                        color: '#9aa0a5',
-                        width: '50%',
-                        textAlign: 'center',
-                        fontSize: '15px',
-                        fontWeight: '300'
-                    }}>
+                    <div className="transparent-space"></div>
+                    <p className="introduction">
                         Nice to meet you! :) Im a Full Stack Web Developer with an obssesion to build
                         successful digital assets online.</p>
 
-                    <div
-                        style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        justifyContent: 'space-around',
-                        width: '90%',
-                        margin: '0 auto',
-                        marginTop: '60px'
-                    }}>
+                    <div className="all-skills-wrapper">
+                        <div className="frontSkills show-skills-list">
+                            <h3 className="skillbox-headline">
+                                Full Stack
+                            </h3>
 
-                        <div className="frontSkills" style={showSkillsList}>
-                            {/* <button type="button" style={{display: 'flex', marginTop: '8px', border: 'none', color: '#FFAA19', fontSize: '24px'}}>+</button> */}
-                            <h3
-                                style={{
-                                textAlign: 'center',
-                                paddingTop: '30px',
-                                marginBottom: '30px'
-                            }}>Full Stack</h3>
-
-                            <div style={numberIcons}>
-                                <div>
-                                    <img src="/img/html5.svg" height="50px" width="40px" alt="html5"/>
-                                </div>
-                                <p
-                                    style={{
-                                    fontSize: '14px'
-                                }}>HTML & CSS</p>
-                                <div>95%</div>
-                            </div>
-
-                            <div style={numberIcons}>
-                                <div>
-                                    <img src="/img/javascript.svg" height="50px" width="40px" alt="javascript"/>
-                                </div>
-                                <p
-                                    style={{
-                                    fontSize: '14px'
-                                }}>JS / ES6&7</p>
-                                <div>90%</div>
-                            </div>
-
-                            <div style={numberIcons}>
-                                <div>
-                                    <img src="/img/react.svg" height="50px" width="40px" alt="react"/>
-                                </div>
-                                <p
-                                    style={{
-                                    fontSize: '14px'
-                                }}>REACT</p>
-                                <div>85%</div>
-                            </div>
-
-                            <div style={numberIcons}>
-                                <div>
-                                    <img src="/img/nodejs.svg" height="50px" width="40px" alt="nodejs"/>
-                                </div>
-                                <p
-                                    style={{
-                                    fontSize: '14px'
-                                }}>NODEJS</p>
-                                <div>82%</div>
-                            </div>
-
+                            {techSkills.map(({ skill, img, perc }) => {
+                                return (
+                                    <div className="number-icons">
+                                        <div>
+                                            <img src={img} height="50px" width="40px" alt={skill}/>
+                                        </div>
+                                        <p style={{fontSize: '14px'}}>{skill}</p>
+                                        <div>{perc}</div>
+                                    </div>)
+                            })}
                         </div>
 
-                        <div className="essentials" style={showSkillsList}>
-                            <h3
-                                style={{
-                                textAlign: 'center',
-                                paddingTop: '30px',
-                                marginBottom: '30px'
-                            }}>Essential Skills</h3>
+                        <div className="essentials show-skills-list">
+                            <h3 className="skillbox-headline">
+                                Essential Skills</h3>
 
-                            <div style={numberIcons}>
-                                <div>
-                                    <img src="/img/ux.svg" height="50px" width="40px" alt="ux/ui"/>
-                                </div>
-                                <p
-                                    style={{
-                                    fontSize: '14px'
-                                }}>UX/UI</p>
-                                <div>93%</div>
-                            </div>
-
-                            <div style={numberIcons}>
-                                <div>
-                                    <img src="/img/selflearner.svg" height="50px" width="40px" alt="selflearner"/>
-                                </div>
-                                <p
-                                    style={{
-                                    fontSize: '14px'
-                                }}>AUTODIDACT</p>
-                                <div>97%</div>
-                            </div>
-
-                            <div style={numberIcons}>
-                                <div>
-                                    <img src="/img/teamplayer.svg" height="50px" width="40px" alt="teamplayer"/>
-                                </div>
-                                <p
-                                    style={{
-                                    fontSize: '14px'
-                                }}>TEAM PLAYER</p>
-                                <div>99%</div>
-                            </div>
-
-                            <div style={numberIcons}>
-                                <div>
-                                    <img
-                                        src="/img/think.svg"
-                                        height="50px"
-                                        width="40px"
-                                        alt="think"
-                                        style={rotate}/>
-                                </div>
-                                <p
-                                    style={{
-                                    fontSize: '14px'
-                                }}>PROBLEM SOLVING</p>
-                                <div>91%</div>
-                            </div>
+                            {softSkills.map(({ skill, img, perc, style }) => {
+                                return (
+                                    <div className="number-icons">
+                                        <div>
+                                            <img src={img} height="50px" width="40px" alt={skill}
+                                            style={{style} = "PROBLEM SOLVING" ? rotate : null}/>
+                                        </div>
+                                        <p style={{fontSize: '14px'}}>{skill}</p>
+                                        <div>{perc}</div>
+                                    </div>)
+                            })}
                         </div>
 
-                        <div className="certifications" style={showSkillsList}>
-                            <h3
-                                style={{
-                                textAlign: 'center',
-                                paddingTop: '30px',
-                                marginBottom: '30px'
-                            }}>On My Free Time</h3>
+                        <div className="certifications show-skills-list">
+                            <h3 className="skillbox-headline">
+                                On My Free Time</h3>
 
                             {certifications.map((certification, index) => (
-                                    <div key={index} style={numberIcons} onClick={() => this.toggleModal(index)}>
+                                    <div key={index} className="number-icons" onClick={() => this.toggleModal(index)}>
                                         <div>
                                             <img
                                                 src={certification.smallImg}
@@ -246,10 +148,10 @@ class MeetMe extends Component {
                                             fontSize: '14px',
                                             margin: '0 auto'
                                         }}
-                                            className="certificationName">{certification.title}</p>
+                                            className="certification-name">{certification.title}</p>
                                     </div>
                                 ))}
-                            {/* <button type="button" style={{display: 'flex', margin: '0 auto', marginTop: '16px', border: 'none', color: '#FFAA19', fontSize: '14px'}}>Watch All</button> */}
+
                         </div>
                     </div>
                     {this.state.isModal

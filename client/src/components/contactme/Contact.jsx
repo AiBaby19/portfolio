@@ -4,6 +4,8 @@ import Notification from '../thankyoupage/Notification';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
+const validator = require("email-validator");
+
 class Contact extends Component {
     constructor() {
         super();
@@ -27,9 +29,15 @@ class Contact extends Component {
     }
 
     async sendEmail(name, email, message) {
-        // if ()
-        if (!name || !email.includes('@') || !message) {
-            return alert("Please fill all the form correctly")
+
+        if (!name || !email || !message) {;
+            toast.error("Please fill all the form")
+            return;
+        }
+
+        if (validator.validate(email) === false) {
+            toast.error("Please enter a valid email");
+            return;
         }
 
         await fetch('/contact/send', {
@@ -49,6 +57,7 @@ class Contact extends Component {
 
     render() {
 
+        //github & linkdin icons
         const socialImg = [
             {
                 img: "/img/git.jpg",
@@ -61,6 +70,7 @@ class Contact extends Component {
             }
         ]
 
+        //placeholder data & functionality
         const placeHolders = [
             {
                 type: "text",
@@ -90,6 +100,7 @@ class Contact extends Component {
                 <h1 style={{
                     margin: '20px 0px 60px 0px'
                 }}>Contact me :D</h1>
+
                 <form className='form' action="/contact/send" method="POST">
                     {placeHolders.map(({type, name, placeholder, value, onChange}) => {
                         return (<input
@@ -98,17 +109,14 @@ class Contact extends Component {
                             placeholder={placeholder}
                             value={value}
                             onChange={onChange}
-                            className="placeholderDesign"
-                            required/>)
+                            className="placeholderDesign"/>)
                     })}
-
                     <button
                         className="btn-contact"
-                        type="submit"
+                        type="button"
                         onClick={() => this.sendEmail(this.state.name, this.state.email, this.state.message)}>
                         Send
                     </button>
-
                 </form>
 
                 <div className="social-icons-div">
@@ -118,15 +126,10 @@ class Contact extends Component {
                             alt={altImg}
                             height="50"
                             width="50"
-                            style={{
-                            cursor: "pointer"
-                        }}
-                            onClick=
-                            { () => window.open(link) }/>)
+                            style={{cursor: "pointer"}}
+                            onClick={() => window.open(link)}/>)
                     })}
-
                 </div>
-
             </div>
         );
     }
