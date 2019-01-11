@@ -6,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.min.css';
 
 const validator = require("email-validator");
 
-
 class Contact extends Component {
     constructor() {
         super();
@@ -30,7 +29,7 @@ class Contact extends Component {
     }
 
     async sendEmail(name, email, message) {
-       
+
         if (!name || !email || !message) {;
             toast.error("Please fill all the form")
             return;
@@ -58,6 +57,7 @@ class Contact extends Component {
 
     render() {
 
+        //github & linkdin icons
         const socialImg = [
             {
                 img: "/img/git.jpg",
@@ -69,6 +69,8 @@ class Contact extends Component {
                 link: "https://www.linkedin.com/in/dror-dvash/"
             }
         ]
+
+        //placeholder data & functionality
         const placeHolders = [
             {
                 type: "text",
@@ -98,6 +100,7 @@ class Contact extends Component {
                 <h1 style={{
                     margin: '20px 0px 60px 0px'
                 }}>Contact me :D</h1>
+
                 <form className='form' action="/contact/send" method="POST">
                     {placeHolders.map(({type, name, placeholder, value, onChange}) => {
                         return (<input
@@ -108,7 +111,6 @@ class Contact extends Component {
                             onChange={onChange}
                             className="placeholderDesign"/>)
                     })}
-
                     <button
                         className="btn-contact"
                         type="button"
@@ -124,11 +126,8 @@ class Contact extends Component {
                             alt={altImg}
                             height="50"
                             width="50"
-                            style={{
-                            cursor: "pointer"
-                        }}
-                            onClick=
-                            { () => window.open(link) }/>)
+                            style={{cursor: "pointer"}}
+                            onClick={() => window.open(link)}/>)
                     })}
                 </div>
             </div>
