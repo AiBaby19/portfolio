@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-// import { inject } from 'mobx-react';
 import './portfolioPage.css';
 
 
-// @inject(allStores => ({
-//   projects: allStores.store.projects
-// }))
 const projects = [
   {title: 'Portfolio', titleImg: '/img/portfolio3.jpg', titleImgAlt: 'portfolio', link: 'https://www.drordvash.com', bigImg:'/img/meetme.jpg', bigImgAlt: 'meetmePortfolio', type: 'website', details:'Technologies: HTML/CSS, React & Mobx, NodeJs, NodeMailer'},
   
@@ -24,15 +20,10 @@ class PortfolioPage extends Component {
 
 
   render() { 
-
-
-
-
     return ( 
       <div>
-        <h1 style={{fontWeight: '200', width: '90%', margin: '0 auto', marginBottom: '90px', textAlign: "center"}}>Recent Work</h1>
-        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', flexWrap: 'wrap', padding: '0px 150px'}}>
-
+        <h1 className="project-headline">Recent Work</h1>
+        <div className="container">
           <div className="wrapper">
             <ul className="stage">
               {projects.map((project,index) => {

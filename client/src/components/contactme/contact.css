@@ -4,6 +4,12 @@
     text-align: center;
 }
 
+.contactMe-headline {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
 .form {
   margin: 0 auto;
   width: 39%;
@@ -49,3 +55,15 @@
 }
 
 
+@media screen and (max-width: 720px) {
+  .form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: left;
+    color: #e5e5e5;
+  }
+
+  .placeholderDesign {
+    font-size: 16px;
+  }
+}

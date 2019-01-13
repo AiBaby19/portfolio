@@ -1,55 +1,59 @@
-.container {
+/* .container {
     display: flex;
-    align-items: center;
     flex-direction: column;
-}
+    justify-content: center;
+
+} */
 
 .headline-name {
     text-align: center;
     margin-top: -20px;
     text-shadow: 0 3px 12px 0 rgba(155, 155, 163, 1);
-}
+} 
 
 .skillbox-headline {
     text-align: center;
     padding-top: 30px;
     margin-bottom: 30px;
+} 
+
+.all-skills-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 60px 0 auto;
 }
 
-.transparent-space {
-    /* backgroundColor: '#F4F8F9', */
-    height: 200px;
-    /* zIndex: '-10', */
-    text-align: center;
-    /* opacity: '.2' */
+.show-skills-list {
+    height: 360px;
+    background-color: white;
+    width: 300px;
+    border: solid 0.2px #9055fb;
+    box-shadow: 0 3px 12px 0 rgba(155, 155, 163, 1);
+    z-index: 0;
+    transition: all 0.2s ease-in-out;
 }
+.show-skills-list:hover {
+    transform: scale(1.0);
+}
+
+
+/* 
+.transparent-space {
+    height: 200px;
+    text-align: center;
+  
+} */
 
 .introduction {
-    margin: -180px auto 0;
+    margin: 0 auto;
     color: #9aa0a5;
     width: 50%;
     text-align: center;
     font-size: 15px;
     font-weight: 300;
     transform: translateY(-10px) scale(1.02);
-}
-
-.show-skills-list {
-    height: 360px;
-    background-color: white;
-    width: 25%;
-    border: solid 0.2px #9055fb;
-    box-shadow: 0 3px 12px 0 rgba(155, 155, 163, 1);
-    z-index: 0;
-}
-
-.all-skills-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 90%;
-    margin: 60px auto 0;
-}
+} 
 
 .number-icons {
     display: flex;
@@ -61,7 +65,36 @@
     text-align: left;
     align-items: center;
 }
-.certification-name:hover {
+/* .certification-name:hover {
     color: orange;
     cursor: pointer;
+} */
+
+
+@media screen and (max-width: 760px) {
+    .introduction {
+        width: 80%;
+        margin-bottom: 35px;
+    }
+
+    .all-skills-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    
+    .show-skills-list {
+        height: 360px;
+        background-color: white;
+        width: 300px;
+        border: solid 0.2px #9055fb;
+        box-shadow: 0 3px 12px 0 rgba(155, 155, 163, 1);
+        z-index: 0;
+        transition: all 0.2s ease-in-out;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    
 }

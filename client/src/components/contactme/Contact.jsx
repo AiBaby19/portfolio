@@ -95,12 +95,9 @@ class Contact extends Component {
         ]
 
         return (
-            <div className="container">
+            <div className="wrapper">
                 <Notification/>
-                <h1 style={{
-                    margin: '20px 0px 60px 0px'
-                }}>Contact me :D</h1>
-
+                <h1 className="contactMe-headline">Contact me :D</h1>
                 <form className='form' action="/contact/send" method="POST">
                     {placeHolders.map(({type, name, placeholder, value, onChange}) => {
                         return (<input
