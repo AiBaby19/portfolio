@@ -85,8 +85,8 @@ class MeetMe extends Component {
 
     render() {
         return (
-            <div>
-                <div className="container">
+            
+                <div className="wrapper">
                     <h3 className="headline-name">
                         Hi, my name is Dror.</h3>
                     <br/>
@@ -161,7 +161,7 @@ class MeetMe extends Component {
                                 certifications={certifications}/>
                         : null}
                 </div>
-            </div>
+          
         );
     }
 }

@@ -375,3 +375,15 @@ button:hover {
 }
 
 
+
+/* tablets */
+@media screen and (max-width: 480px) {
+  .flicker-in-2 {
+      display: none;
+    }
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
