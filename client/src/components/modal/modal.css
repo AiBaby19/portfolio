@@ -11,6 +11,7 @@
 
 .btn-close-modal {
     border: none;
+    background-color: white;
     color: red;
     font-size: 18px;
     margin: 5px;
@@ -30,6 +31,7 @@
     height: auto;
 }
 
+
 .inner-modal-div {
     min-height: 320px;
     height: auto;
@@ -45,7 +47,7 @@
     text-align: left;
 }
 
-.image-info-div {
+.img-info-div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -68,16 +70,19 @@
 
 .outer-modal-div {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 15px;
     background-color: white;
     border: solid 2px lightgrey;
     border-radius: 5px;
     width: 80%;
     z-index: 9;
-    min-height: 400px;
     height: auto;
+    max-height: 70%;
+    overflow-y: scroll;
+}
+
+.img-info-div {
+    all: initial;
 }
 
 .certification-image{
@@ -89,12 +94,12 @@
   margin-top: 12%;
   margin-bottom: 12%;
   font-size: 16px;
-  width: 80%;
+  width: 95%;
   text-align: left;
+  font-weight: 200;
 }
 
 .certification-link {
   display: inline;
-  
 }
 }
