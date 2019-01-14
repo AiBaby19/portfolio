@@ -11,6 +11,11 @@ const rotate = {
 
 
 const certifications = [
+
+    {title: 'JavaScript Algorithm & Data Structures', institute: 'FreeCodeCamp', link: "https://www.freecodecamp.org/certification/dubask/javascript-algorithms-and-data-structures",
+    smallImg: '/img/jsalgoSmall.jpg', smallImgAlt: "fccJSCertification", bigImg: '/img/jsalgoBig.png', bigImgAlt: 'responsiveWebDeBig',details: 'Developing skills that fits the industry, learning about regular expressions, debugging, advnaced algorithm and data structures, fucntional programming and ES6'},
+
+
     {title: 'Responsive Web Design', institute: 'FreeCodeCamp', link: "https://www.freecodecamp.org/certification/dubask/responsive-web-design",
     smallImg: '/img/responsiveWebDeSmall.jpg', smallImgAlt: "responsiveWebDeSmall", bigImg: '/img/responsiveWebDesign.png', bigImgAlt: 'responsiveWebDeBig',details: 'From applied visual design to flexbox. 300 hours of responsivness and flexebility. '},
 
@@ -18,8 +23,8 @@ const certifications = [
 
     {title: 'JS - The Weird Parts', institute: 'Anthony Alecia', link: 'https://www.udemy.com/certificate/UC-GTBY8TWK/', smallImg: "/img/jswp.jpg", smallImgAlt: "javaScript the weird parts", bigImg: '/img/JavaScripttheWeirdParts.jpg', bigImgAlt: 'JS Weird Parts', details: 'Gaining a deep understanding of Javascript, learn how Javascript works under the hood. objects and object literals, function expressions, prototypical inheritance, functional programming, scope chains, function constructors (plus new ES6 features), immediately invoked function expressions (IIFEs), call, apply, bind, and more.'},
 
-    {title: 'Code Wars (Algorithm)', smallImg: '/img/codewarssmall.png', smallImgAlt: 'codewarsSmall', 
-    details: 'Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. The more kata the programmer complete the higher his rank goes.',bigImg:'https://www.codewars.com/users/Dash_9/badges/large', bigImgAlt: 'codwarsBig'}
+    // {title: 'Code Wars (Algorithm)', smallImg: '/img/codewarssmall.png', smallImgAlt: 'codewarsSmall', 
+    // details: 'Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. The more kata the programmer complete the higher his rank goes.',bigImg:'https://www.codewars.com/users/Dash_9/badges/large', bigImgAlt: 'codwarsBig'}
   ]
 
 const techSkills = [
