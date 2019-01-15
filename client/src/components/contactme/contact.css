@@ -55,7 +55,7 @@
 }
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
   .form {
     margin: 0 auto;
     width: 70%;
@@ -67,3 +67,10 @@
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .contactMe-headline {
+    margin-top: -20px;
+  }
+}
+

@@ -2,7 +2,7 @@
     font-weight: 200; 
     width: 90%; 
     margin: 0 auto; 
-    margin-bottom: 90px; 
+    margin-bottom: 60px; 
     text-align: center;
 }
 
@@ -166,3 +166,18 @@
 .scene:nth-child(3) .info header {
     background-image: url('/public/triplanLogo.png');
 }
+
+
+@media screen and (max-width: 1200px) {
+    .stage {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .project-headline {
+        margin-bottom: 15px; 
+        margin-top: -20px;
+    }
+}
+

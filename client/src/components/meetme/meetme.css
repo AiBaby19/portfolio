@@ -57,32 +57,24 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+    
+    .all-skills-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    .show-skills-list {
+        margin-bottom: 35px; 
+    }
+}
 
 @media screen and (max-width: 760px) {
     .introduction {
         width: 80%;
         margin-bottom: 35px;
     }
-
-    .all-skills-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
     
-    .show-skills-list {
-        height: 360px;
-        background-color: white;
-        width: 300px;
-        border: solid 0.2px #9055fb;
-        box-shadow: 0 3px 12px 0 rgba(155, 155, 163, 1);
-        z-index: 0;
-        transition: all 0.2s ease-in-out;
-        margin: 0 auto;
-        margin-bottom: 35px;
-      
-    }
-
-    
+  
 }
