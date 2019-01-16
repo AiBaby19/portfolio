@@ -141,7 +141,7 @@
 }
 .scene:nth-child(1) .movie .poster {
     /* background-color: red; */
-    background-color: rgb(209, 111, 255);
+    /* background-color: rgb(209, 111, 255); */
     background-image: url('/public/whereismyfood.jpg');
 }
 .scene:nth-child(2) .poster {

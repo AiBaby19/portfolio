@@ -12,7 +12,8 @@
 
 .form {
   margin: 0 auto;
-  width: 39%;
+  margin-top: 100px;
+  width: 32%;
   text-align: left;
   color: #e5e5e5;
 }
@@ -42,6 +43,7 @@
     background-color: #ffaa19;
     color: white;
     font-size: 16px;
+    margin-top: 15px;
 }
 
 .social-icons-div {

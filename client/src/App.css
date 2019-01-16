@@ -9,8 +9,7 @@
 body {
   /* background-color: rgb(255, 253, 253); */
   background-color: #FCFCFC;
-
-  /* background-color: rgb(0,0,0,.); */
+  min-height: 100vh;  /* background-color: rgb(0,0,0,.); */
   color: #585c61;
   overflow: auto;
   /* background-image: url("/snow.png"); */
