@@ -1,6 +1,7 @@
 .navbar {
   padding: 10px;
-  margin: 10px 0 80px 0;
+  margin: 50px 0 80px 0;
+  background-color: red;
 }
 
 .logo {
@@ -8,7 +9,7 @@
   height: 55px;
   width: 100px;
   font-size: 36px;
-  margin: 10px 0 0 20px;
+  margin: 10px 0 0 25px;
 }
 
 .navList {
@@ -19,7 +20,7 @@
   list-style: none;
   width: 40%;
   margin: auto;
-  margin-top: 0px;
+  margin-top: 30px;
   
 }
 
@@ -27,6 +28,10 @@ a:hover {
   color: orange;
   transition: 0s;
 }
+
+/* a:active {
+  text-decoration: underline;
+} */
 
 @media screen and (max-width: 720px) {
  
@@ -39,5 +44,16 @@ a:hover {
     margin-top: 40px;
     width: 100%;
     justify-content: space-around;
+    /* border: 1px solid purple; */
+    /* background-color: #56198b; */
+
+    
   }
+
+  .singleLink {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    /* padding: 5px;  */
+  }
+
 }

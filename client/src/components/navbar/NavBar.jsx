@@ -11,8 +11,8 @@ class NavBar extends Component {
         <div className="logo"><NavLink to="/">LOGO</NavLink></div>
         <ul className="navList">
           <li className="singleLink"><NavLink to ="/meetme">Meet Me</NavLink></li>
-          <li><NavLink to ="/portfoliopage">Portfolio</NavLink></li>
-          <li><NavLink to ="/contact">Contact</NavLink></li>
+          <li className="singleLink"><NavLink to ="/portfoliopage">Portfolio</NavLink></li>
+          <li className="singleLink"><NavLink to ="/contact">Contact</NavLink></li>
         </ul>
       </div>
      );
