@@ -1,29 +1,30 @@
 .headline-name {
     text-align: center;
-    margin: -20px 0 20px 0;
+    margin: -2% 0 1% 0;
     /* margin-b */
     text-shadow: 0 3px 12px 0 rgba(155, 155, 163, 1);
-    margin-top: 35px;
+    margin-top: 3.5%;
 } 
 
 .skillbox-headline {
     text-align: center;
-    padding-top: 30px;
-    margin-bottom: 25px;
+    padding-top: 9%;
+    margin-bottom: 9%;
 } 
 
 .all-skills-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0 100px;
-    margin: 70px 0 auto;
+    padding: 0 5%;
+    margin: 5% 0 auto;
 }
 
 .show-skills-list {
-    height: 360px;
+    height: 340px;
     background-color: white;
     width: 300px;
+    /* width: 25%; */
     border: solid 0.2px #9055fb;
     box-shadow: 0 3px 12px 0 rgba(155, 155, 163, 1);
     z-index: 0;
@@ -50,7 +51,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 15px auto 0;
+    margin: 1.5% auto 0;
     width: auto;
     max-width: 90%;
     align-items: center;
@@ -68,9 +69,12 @@
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 0 auto;
+        
+
     }
     .show-skills-list {
         margin-bottom: 35px; 
+        height: 300px;
     }
 }
 
