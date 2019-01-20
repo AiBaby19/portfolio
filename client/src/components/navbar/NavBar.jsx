@@ -8,7 +8,7 @@ class NavBar extends Component {
 
     return ( 
       <div className="navbar">
-        <div className="logo"><NavLink to="/">LOGO</NavLink></div>
+        <div className="logo"><NavLink to="/">_dash</NavLink></div>
         <ul className="navList">
           <li className="singleLink"><NavLink to ="/meetme">Meet Me</NavLink></li>
           <li className="singleLink"><NavLink to ="/portfoliopage">Portfolio</NavLink></li>
