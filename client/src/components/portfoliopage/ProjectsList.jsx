@@ -7,7 +7,7 @@ const projects = [
   
   {title: 'WheresMyFood', titleImg: '/img/whereismyfood.jpg', titleImgAlt: 'wmf', link:'https://whereismyfood.herokuapp.com/', bigImg:'/img/wheremyfoodat.png', bigImgAlt: 'wmfBig', type: 'webapp', details:'Delivery App including 3 sides (client, delivery employee, restaurant) that monitors the progress of food prapration and delivery time and progress via google maps. Technologies: jQuery, GoogleMaps, NodeJs, '},
 
-  {title: 'Emaily', titleImg: '/img/wmf.jpg', titleImgAlt: 'wmf', link:'https://whereismyfood.herokuapp.com/', bigImg:'/img/triplan.png', bigImgAlt: 'wmfBig', type: 'webapp', details:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'}
+  {title: 'Emaily', titleImg: '/img/wmf.jpg', titleImgAlt: 'wmf', link:'https://ancient-journey-22712.herokuapp.com/', bigImg:'/img/triplan.png', bigImgAlt: 'wmfBig', type: 'webapp', details:'Sending emails to clients and getting all the responds in an order manner. The user can get credit by paying with an integrated payemnt system (Stripe) Technologies: Node.js, MongoDB, React, Redux, GoogleAuth, SendGrid, Stripe'}
 ]
 
 
