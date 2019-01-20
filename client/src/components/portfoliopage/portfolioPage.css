@@ -2,16 +2,8 @@
     font-weight: 200; 
     width: 90%; 
     margin: 0 auto; 
-    margin-bottom: 60px; 
+    margin-bottom: 5%; 
     text-align: center;
-}
-
-.container {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: space-around; 
-  flex-wrap: wrap; 
-  padding: 0px 150px;
 }
 
 .info:hover {
@@ -177,7 +169,7 @@
 @media screen and (max-width: 520px) {
     .project-headline {
         margin-bottom: 15px; 
-        margin-top: -20px;
+        /* margin-top: -0px; */
     }
 }
 
