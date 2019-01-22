@@ -30,9 +30,11 @@ a:hover {
   transition: 0s;
 }
 
-/* a:active {
-  text-decoration: underline;
-} */
+.is-active {
+  padding-bottom: 5px;
+  border-bottom: 3px solid orange;
+  /* color: orange; */
+}
 
 @media screen and (max-width: 720px) {
  

@@ -8,11 +8,11 @@ class NavBar extends Component {
 
     return ( 
       <div className="navbar">
-        <div className="logo"><NavLink to="/">d_ash</NavLink></div>
+        <div className="logo"><NavLink exact={true} activeClassName='is-active' to="/">d_ash</NavLink></div>
         <ul className="navList">
-          <li className="singleLink"><NavLink to ="/meetme">Meet Me</NavLink></li>
-          <li className="singleLink"><NavLink to ="/portfoliopage">Portfolio</NavLink></li>
-          <li className="singleLink"><NavLink to ="/contact">Contact</NavLink></li>
+          <li className="singleLink"><NavLink activeClassName='is-active' to="/meetme">Meet Me</NavLink></li>
+          <li className="singleLink"><NavLink activeClassName='is-active' to="/portfoliopage">Portfolio</NavLink></li>
+          <li className="singleLink"><NavLink activeClassName='is-active' to="/contact">Contact</NavLink></li>
         </ul>
       </div>
      );
