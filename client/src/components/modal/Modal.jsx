@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Loader from '../loader/Loader';
 import './modal.css';
 
 class Modal extends Component {
@@ -39,6 +40,7 @@ class Modal extends Component {
                             }}>
                                 <div className="certification-image">
                                     <a target="#" rel="noopener noreferrer" href={certifications[index].link}><img
+                                        onLoad={< Loader />}
                                         src={certifications[index].bigImg}
                                         alt={certifications[index].bigImgAlt}
                                         height='250px'
