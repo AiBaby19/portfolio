@@ -17,16 +17,16 @@ class App extends Component {
     };
   }
 
-  // toggleSwitch = () => {
+  toggleSwitch = () => {
 
-  //   this.setState({ flickerLights: true});
+    this.setState({ flickerLights: true});
 
-  //   setTimeout(()=> {
-  //   this.setState(prevState => ({
-  //     isButtonOn: !prevState.isButtonOn
-  //   }));
-  // },1500)
-  // }
+    setTimeout(()=> {
+    this.setState(prevState => ({
+      isButtonOn: !prevState.isButtonOn
+    }));
+  },1500)
+  }
 
   
   render() {
@@ -38,7 +38,7 @@ class App extends Component {
               <BrowserRouter>
             <div>
 
-              {/* <div className="fade-in"> */}
+              <div className="fade-in">
               <div>
                 <NavBar/>
               </div>
@@ -50,7 +50,7 @@ class App extends Component {
                 <Route path="/contact" component={Contact} exact/>Contact
               </Switch>
               </div>
-              {/* </div> */}
+              </div>
             </BrowserRouter>
           </div>)
           :
