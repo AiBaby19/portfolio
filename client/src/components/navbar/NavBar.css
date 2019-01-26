@@ -26,6 +26,10 @@
   
 }
 
+.singleLink {
+  color: inherit;
+}
+
 a:hover {
   color: orange;
   transition: 0s;
