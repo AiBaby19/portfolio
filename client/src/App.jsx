@@ -67,12 +67,8 @@ class App extends Component {
                             : null}>
                             <div>
                                 <div className="shulterToCenter">
-                                    <h1
-                                        style={{
-                                        color: 'white',
-                                        textAlign: 'center',
-                                        paddingTop: '250px'
-                                    }}>SWITCH ME</h1>
+                                    <h1 className="switchMeHeadline"
+                                    >SWITCH ME</h1>
                                     <div className="switchHolder">
                                         <div className="switch" onClick={this.toggleSwitch}>
                                             <input type="checkbox" name=""/>
