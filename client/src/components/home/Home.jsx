@@ -9,7 +9,7 @@ class Home extends Component {
       <div className="app">
         <StrictMode>
             <h1 className="home-headline">Full Stack Developer</h1>
-            <h4 className="typewriter">With Humility.</h4>
+            {/* <h4 className="typewriter">Useful Products. Beatifuly Designed. Simple Code.</h4> */}
             <div className="main-img">
               <img onLoad={< Loader />} src="/img/porfolioimg.png" alt="themepic" height="200" width="500" className="flicker-in-2"/>
               </div>
