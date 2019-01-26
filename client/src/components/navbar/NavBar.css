@@ -64,3 +64,11 @@ a:hover {
   }
 
 }
+
+@media screen and (max-width: 320px) {
+  .is-active {
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

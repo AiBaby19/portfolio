@@ -6,6 +6,7 @@
 
 .main-img {
   text-align: center;
+  /* background-color: red; */
   margin: 50px;
   margin-top: 70px;
   margin-bottom: 75px;
@@ -23,27 +24,6 @@
   font-size: 16px;
 }
 
-/* TypeWriter */
-.typewriter {
-  position: relative;
-  margin: 0 auto;
-  top: 50%;
-  border-right: 2px solid rgba(255,255,255,.75);
-  text-align: center;
-  transform: translateY(-50%);
-  animation: typewriter 6s steps(21) 1 normal;
-  font-weight: 200;
-  animation-delay: 1s;
-  blinkTextCursor: 500ms steps(44) 4s normal;
-  }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 100%;}
-  }
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(116, 109, 109, 0.75);}
-  to{border-right-color: transparent;}
-  }
 
 /* home page image flicker in */
 .flicker-in-2 {
@@ -420,22 +400,7 @@
   .home-headline {
     margin-top: -10px;
     margin-bottom: 40px;
-  }
-
-  .typewriter {
-    all: initial;
-    font: inherit;
-    color: inherit;
-    display: block;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
     text-align: center;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    flex-wrap: wrap;
-    width: 70%;
   }
 
   .home-button {
@@ -447,4 +412,7 @@
   .main-img {
     display: none;
   }
+  /* .flicker-in-2 {
+    all: initial;
+  } */
 }

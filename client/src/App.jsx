@@ -12,7 +12,8 @@ class App extends Component {
         super();
         this.state = {
             isButtonOn: false,
-            flickerLights: false
+            flickerLights: false,
+            // afterSwitch: false
         };
     }
 
@@ -26,6 +27,9 @@ class App extends Component {
     }
 
     render() {
+        const thisProps = this.state.after;
+        console.log('thisProps', thisProps)
+
         return (
             <div className="app">
                 <StrictMode>
@@ -41,7 +45,7 @@ class App extends Component {
                                             </div>
 
                                             <Switch>
-                                                <Route path="/" component={Home} exact/>
+                                                <Route path="/" render={() => <Home {...thisProps}/>} exact/>
                                                 <Route path="/meetme" component={MeetMe} exact/>Meet Me
                                                 <Route exac path="/portfoliopage" component={PortfolioPage}/>Portfolio
                                                 <Route path="/contact" component={Contact} exact/>Contact
@@ -61,15 +65,17 @@ class App extends Component {
                             className={this.state.flickerLights
                             ? "flicker-out-1"
                             : null}>
-                            <h1
-                                style={{
-                                color: 'white',
-                                textAlign: 'center',
-                                paddingTop: '250px'
-                            }}>SWITCH ME ON.</h1>
-                            <div className="switch" onClick={this.toggleSwitch}>
-                                <input type="checkbox" name=""/>
-                                <label></label>
+                            <div>
+                                <div className="shulterToCenter">
+                                    <h1 className="switchMeHeadline"
+                                    >SWITCH ME</h1>
+                                    <div className="switchHolder">
+                                        <div className="switch" onClick={this.toggleSwitch}>
+                                            <input type="checkbox" name=""/>
+                                            <label></label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>}
 
