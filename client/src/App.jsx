@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react';
+import React, { Component, StrictMode } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PortfolioPage from './components/portfoliopage/PortfolioPage';
@@ -12,7 +12,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      isButtonOn: true,
+      isButtonOn: false,
       flickerLights: false,
     };
   }
@@ -23,16 +23,16 @@ class App extends Component {
 
     setTimeout(()=> {
     this.setState(prevState => ({
-      isButtonOn: !prevState.isButtonOn
+      isButtonOn: true
     }));
-  },1500)
+  },1000)
   }
 
   
   render() {
     return (
       <div className="app">
-        {/* <StrictMode> */}
+        <StrictMode>
           {this.state.isButtonOn ? 
             (<div>
               <BrowserRouter>
@@ -63,7 +63,7 @@ class App extends Component {
           </div>}
         
           
-        {/* </StrictMode> */}
+        </StrictMode>
       </div>
     );
   }
