@@ -12,7 +12,8 @@ class App extends Component {
         super();
         this.state = {
             isButtonOn: false,
-            flickerLights: false
+            flickerLights: false,
+            // afterSwitch: false
         };
     }
 
@@ -26,7 +27,8 @@ class App extends Component {
     }
 
     render() {
-        const thisProps = this.state.isButtonOn;
+        const thisProps = this.state.after;
+        console.log('thisProps', thisProps)
 
         return (
             <div className="app">
@@ -70,7 +72,7 @@ class App extends Component {
                                         color: 'white',
                                         textAlign: 'center',
                                         paddingTop: '250px'
-                                    }}>SWITCH ME.</h1>
+                                    }}>SWITCH ME</h1>
                                     <div className="switchHolder">
                                         <div className="switch" onClick={this.toggleSwitch}>
                                             <input type="checkbox" name=""/>

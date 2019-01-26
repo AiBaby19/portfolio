@@ -420,22 +420,7 @@
   .home-headline {
     margin-top: -10px;
     margin-bottom: 40px;
-  }
-
-  .typewriter {
-    all: initial;
-    font: inherit;
-    color: inherit;
-    display: block;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
     text-align: center;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    flex-wrap: wrap;
-    width: 70%;
   }
 
   .home-button {
@@ -445,6 +430,6 @@
 
 @media screen and (max-width: 560px) {
   .main-img {
-    display: none;
+    /* display: none; */
   }
 }
