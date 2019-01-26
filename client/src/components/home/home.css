@@ -47,8 +47,8 @@
 
 /* home page image flicker in */
 .flicker-in-2 {
-	-webkit-animation: flicker-in-2 2.5s linear both;
-          animation: flicker-in-2 2.5s linear both;
+	-webkit-animation: flicker-in-2 4.5s linear both;
+          animation: flicker-in-2 4.5s linear both;
           animation-delay: 2s;
 }
 
