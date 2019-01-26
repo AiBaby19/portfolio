@@ -26,14 +26,15 @@
 /* TypeWriter */
 .typewriter {
   position: relative;
+  margin: 0 auto;
   top: 50%;
   border-right: 2px solid rgba(255,255,255,.75);
   text-align: center;
   transform: translateY(-50%);
-  /* animation: typewriter 7s steps(44) 1 normal; */
+  animation: typewriter 6s steps(21) 1 normal;
   font-weight: 200;
-  /* animation-delay: 1s; */
-  /* blinkTextCursor 500ms steps(44) 4s normal; */
+  animation-delay: 1s;
+  blinkTextCursor: 500ms steps(44) 4s normal;
   }
 @keyframes typewriter{
   from{width: 0;}
@@ -46,14 +47,14 @@
 
 /* home page image flicker in */
 .flicker-in-2 {
-	-webkit-animation: flicker-in-2 2.5s linear both;
-          animation: flicker-in-2 2.5s linear both;
+	-webkit-animation: flicker-in-2 4.5s linear both;
+          animation: flicker-in-2 4.5s linear both;
           animation-delay: 2s;
 }
 
 
-/* button animation */
-/* @-webkit-keyframes flicker-in-2 {
+/* button animation  */
+ @-webkit-keyframes flicker-in-2 {
   0% {
     opacity: 0;
   }
@@ -302,10 +303,10 @@
     opacity: 1;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
   }
-} */
+}
 
-  /* bounce of button*/
-/* .bounce-in-top {
+  /* bounce of button */
+.bounce-in-top {
     -webkit-animation: bounce-in-top 6s both;
             animation: bounce-in-top 2s both;
             animation-delay: 5s;
@@ -411,7 +412,7 @@
       -webkit-animation-timing-function: ease-out;
               animation-timing-function: ease-out;
     }
-} */
+}
 
 /* mobile */
 @media screen and (max-width: 760px) {
