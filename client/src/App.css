@@ -37,12 +37,27 @@ button:hover {
 
 /* ON/OFF SWTICHER */
 .switch {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-top: 8%;
   width: 50px;
   height: 100px;
-  position: absolute;
-  top: 50%;
+  /* background-color: white; */
+  position: relative;
+
+  top:20%; 
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.shulterToCenter {
+  background-color: black;
+}
+
+.switchHolder {
+  display: block;
+  margin: 0 auto;
 }
 
 .switch input {
