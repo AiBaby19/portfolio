@@ -13,15 +13,15 @@ const rotate = {
 const certifications = [
 
     {title: 'JavaScript Algorithm & Data Structures', institute: 'FreeCodeCamp', link: "https://www.freecodecamp.org/certification/dubask/javascript-algorithms-and-data-structures",
-    smallImg: '/img/jsalgoSmall.jpg', smallImgAlt: "fccJSCertification", bigImg: '/img/jsalgoBig.png', bigImgAlt: 'responsiveWebDeBig',details: 'Developing skills that fits the industry, learning about regular expressions, debugging, advnaced algorithm and data structures, fucntional programming and ES6'},
+    smallImg: '/img/jsalgoSmall.jpg', smallImgAlt: "fccJSCertification", bigImg: '/img/jsalgoBig.png', bigImgAlt: 'responsiveWebDeBig',details: 'Developing skills that fits the industry, learning about regular expressions, debugging, advance algorithm and data structures, functional programming and ES6'},
 
 
     {title: 'Responsive Web Design', institute: 'FreeCodeCamp', link: "https://www.freecodecamp.org/certification/dubask/responsive-web-design",
-    smallImg: '/img/responsiveWebDeSmall.jpg', smallImgAlt: "responsiveWebDeSmall", bigImg: '/img/responsiveWebDesign.png', bigImgAlt: 'responsiveWebDeBig',details: 'From applied visual design to flexbox. 300 hours of responsivness and flexebility. '},
+    smallImg: '/img/responsiveWebDeSmall.jpg', smallImgAlt: "responsiveWebDeSmall", bigImg: '/img/responsiveWebDesign.png', bigImgAlt: 'responsiveWebDeBig',details: 'From applied visual design to flex-box. 300 hours of responsiveness and flexibility. '},
 
     {title: 'Structure & Readability', institute: 'Benjamin Melki', link: 'https://www.udemy.com/certificate/UC-Z6CAIZQG/', smallImg: "/img/jswp.jpg", smallImgAlt: "readabilitysmall", bigImg: '/img/readability.jpg', bigImgAlt: 'readabilityBig', details: 'Apply a systematic approach to properly start any mobile, web or desktop software project: organize the flow of any program. organize projects folders structure. files names. code high quality, readable and maintainable code properly name variables and write good code comments simplify their conditional structures. create effective functions and classes.'},
 
-    {title: 'JS - The Weird Parts', institute: 'Anthony Alecia', link: 'https://www.udemy.com/certificate/UC-GTBY8TWK/', smallImg: "/img/jswp.jpg", smallImgAlt: "javaScript the weird parts", bigImg: '/img/JavaScripttheWeirdParts.jpg', bigImgAlt: 'JS Weird Parts', details: 'Gaining a deep understanding of Javascript, learn how Javascript works under the hood. objects and object literals, function expressions, prototypical inheritance, functional programming, scope chains, function constructors (plus new ES6 features), immediately invoked function expressions (IIFEs), call, apply, bind, and more.'},
+    {title: 'JS - The Weird Parts', institute: 'Anthony Alecia', link: 'https://www.udemy.com/certificate/UC-GTBY8TWK/', smallImg: "/img/jswp2.jpg", smallImgAlt: "javaScript the weird parts", bigImg: '/img/JavaScripttheWeirdParts.jpg', bigImgAlt: 'JS Weird Parts', details: 'Gaining a deep understanding of Javascript, learn how Javascript works under the hood. objects and object literals, function expressions, prototypical inheritance, functional programming, scope chains, function constructors (plus new ES6 features), immediately invoked function expressions (IIFEs), call, apply, bind, and more.'},
 
     // {title: 'Code Wars (Algorithm)', smallImg: '/img/codewarssmall.png', smallImgAlt: 'codewarsSmall', 
     // details: 'Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. The more kata the programmer complete the higher his rank goes.',bigImg:'https://www.codewars.com/users/Dash_9/badges/large', bigImgAlt: 'codwarsBig'}
@@ -97,7 +97,7 @@ class MeetMe extends Component {
                     <br/>
                     <div className="transparent-space"></div>
                     <p className="introduction">
-                        Nice to meet you! :) Im a Full Stack Web Developer with an obssesion to build
+                        Nice to meet you! :) Im a Full Stack Web Developer with an obsession to build
                         successful digital assets online.</p>
 
                     <div className="all-skills-wrapper">

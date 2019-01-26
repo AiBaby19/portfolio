@@ -17,11 +17,11 @@ const projects = [
         titleImg: '/img/whereismyfood.jpg',
         titleImgAlt: 'wmf',
         link: 'https://whereismyfood.herokuapp.com/',
-        bigImg: '/img/wheremyfoodat.png',
+        bigImg: '/img/BARMAZI-min.png',
         bigImgAlt: 'wmfBig',
         type: 'webapp',
         details: 'Delivery App including 3 sides (client, delivery employee, restaurant) that moni' +
-                'tors the progress of food prapration and delivery time and progress via google m' +
+                'tors the progress of food preparation and delivery time and progress via google m' +
                 'aps. Technologies: jQuery, GoogleMaps, NodeJs, '
     }, {
         title: 'eMaily',
@@ -32,8 +32,7 @@ const projects = [
         bigImgAlt: 'eMailyBig',
         type: 'webapp',
         details: 'Sending emails to clients and getting all the responds in an order manner. The u' +
-                'ser can get credit by paying with an integrated payemnt system (Stripe) Technolo' +
-                'gies: Node.js, MongoDB, React, Redux, GoogleAuth, SendGrid, Stripe'
+                'ser can get credit by paying with an integrated payment system (Stripe) Technologies: Node.js, MongoDB, React, Redux, GoogleAuth, SendGrid, Stripe'
     }
 ]
 
@@ -57,17 +56,19 @@ class PortfolioList extends Component {
                                 <div className="movie">
                                     <div className="poster"><img onLoad={< Loader />} src={project.titleImg} alt={project.titleImgAlt} width="260" height="400"/></div>
                                     <div onClick={() => window.open(project.link)} className="info">
-
-                                        <img
+                                        <div>
+                                        <img className="innerImg"
                                             onLoad={< Loader />}
                                             src={project.bigImg}
                                             alt={project.bigImgAlt}
-                                            width="240"
-                                            height="195"/> {/* <h1>{project.title}</h1> */}
+                                            // style={{width: "100%", height: "100%"}}
+                                            // width="100%"
+                                            // height="170"
+                                            /> {/* <h1>{project.title}</h1> */}
                                         {/* <span className="year">1946</span>
                         <span className="rating">PG</span>
                         <span className="duration">130 minutes</span> */}
-
+                                            </div>
                                         <p>
                                             {project.details}
                                         </p>
