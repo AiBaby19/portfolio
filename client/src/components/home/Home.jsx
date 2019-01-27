@@ -27,7 +27,7 @@ class Home extends Component {
                     <button
                         className="bounce-in-top home-button" 
                         type="button"
-                        onClick={() => this.props.history.push('/contact')}>Contact</button>
+                        onClick={() => this.props.history.push('/contact')}>CONTACT</button>
                 </StrictMode>
             </div>
         );
