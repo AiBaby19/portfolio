@@ -47,6 +47,10 @@
     transform: translateY(-10px) scale(1.02);
 } 
 
+.introduction:hover {
+    -webkit-transform: scale(1.2); 
+}
+
 .number-icons {
     display: flex;
     flex-direction: row;
