@@ -47,9 +47,12 @@
     transform: translateY(-10px) scale(1.02);
 } 
 
-.introduction:hover {
+
+/* .introduction:hover {
     -webkit-transform: scale(1.2); 
-}
+} */
+
+
 
 .number-icons {
     display: flex;
@@ -58,9 +61,13 @@
     margin: 1.5% auto 0;
     width: auto;
     max-width: 90%;
-    align-items: center;
     height: 15%;
+    align-items: center;
+    margin-bottom: 15px;
+    
 }
+
+
 .certification-name:hover {
     color: orange;
     cursor: pointer;
