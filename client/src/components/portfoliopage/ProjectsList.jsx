@@ -37,9 +37,6 @@ const projects = [
 ]
 
 class PortfolioList extends Component {
-    state = {
-        cardopen: false
-    }
 
     render() {
         return (

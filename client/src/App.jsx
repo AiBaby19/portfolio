@@ -47,7 +47,7 @@ class App extends Component {
                                             <Switch>
                                                 <Route path="/" render={() => <Home {...thisProps}/>} exact/>
                                                 <Route path="/meetme" component={MeetMe} exact/>Meet Me
-                                                <Route exac path="/portfoliopage" component={PortfolioPage}/>Portfolio
+                                                <Route path="/portfoliopage" component={PortfolioPage} exact/>Portfolio
                                                 <Route path="/contact" component={Contact} exact/>Contact
                                             </Switch>
                                         </div>
@@ -65,8 +65,9 @@ class App extends Component {
                             className={this.state.flickerLights
                             ? "flicker-out-1"
                             : null}>
-                            <div>
-                                <div className="shulterToCenter">
+                            <div className="container">
+                            {/* <div> */}
+                                
                                     <h1 className="switchMeHeadline"
                                     >SWITCH ME</h1>
                                     <div className="switchHolder">
@@ -75,7 +76,7 @@ class App extends Component {
                                             <label></label>
                                         </div>
                                     </div>
-                                </div>
+                                {/* </div> */}
                             </div>
                         </div>}
 
