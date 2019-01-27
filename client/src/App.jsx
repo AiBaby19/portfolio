@@ -28,10 +28,8 @@ class App extends Component {
 
     render() {
         const thisProps = this.state.after;
-        console.log('thisProps', thisProps)
 
         return (
-            <div className="app">
                 <StrictMode>
                     {this.state.isButtonOn
                         ? (
@@ -81,7 +79,6 @@ class App extends Component {
                         </div>}
 
                 </StrictMode>
-            </div>
         );
     }
 }
