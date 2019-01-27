@@ -31,22 +31,22 @@ const techSkills = [
     {
         skill: 'HTML & CSS',
         img: '/img/html5.svg',
-        perc: '95%'
+        perc: '89%'
     },
     {
         skill: 'JS & ES6',
         img: '/img/javascript.svg',
-        perc: '95%'
+        perc: '94%'
     },
     {
         skill: 'REACT',
         img: '/img/react.svg',
-        perc: '95%'
+        perc: '91%'
     },
     {
         skill: 'NODEJS',
         img: '/img/nodejs.svg',
-        perc: '95%'
+        perc: '81%'
     }
 ]
 
@@ -54,12 +54,12 @@ const softSkills = [
     {
         skill: 'UX/UI',
         img: '/img/ux.svg',
-        perc: '95%'
+        perc: '92%'
     },
     {
         skill: 'AUTODIDACT',
         img: '/img/selflearner.svg',
-        perc: '95%'
+        perc: '100%'
     },
     {
         skill: 'TEAM PLAYER',
@@ -69,7 +69,7 @@ const softSkills = [
     {
         skill: 'PROBLEM SOLVING',
         img: '/img/think.svg',
-        perc: '95%',
+        perc: '91%',
         style: rotate
     }
 ]
@@ -105,7 +105,7 @@ class MeetMe extends Component {
                             <h3 className="skillbox-headline">
                                 Full Stack
                             </h3>
-
+                           
                             {techSkills.map(({ skill, img, perc }) => {
                                 return (
                                     <div className="number-icons">
@@ -116,6 +116,7 @@ class MeetMe extends Component {
                                         <div>{perc}</div>
                                     </div>)
                             })}
+                          
                         </div>
 
                         <div className="essentials show-skills-list">
