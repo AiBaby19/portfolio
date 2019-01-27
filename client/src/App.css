@@ -6,7 +6,8 @@
 }
 
 h1 h2 h3 h4 h5 {
-  color :#17003c;
+  /* color :#17003c; */
+  color: #3e3b3b !important;
 }
 
 
@@ -348,28 +349,44 @@ button:hover {
 /* fade in navbar */
 .fade-in {
     -webkit-animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 @-webkit-keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+}
 
-    70% {
-        opacity: 0;
-    }
+20% {
+  opacity: 0;
+}
 
-    100% {
-        opacity: 1;
-    }
+50% {
+  opacity: 0;
+}
+
+70% {
+    opacity: .4;
+}
+
+100% {
+    opacity: 1;
+}
 }
 @keyframes fade-in {
     0% {
         opacity: 0;
     }
 
+    20% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
     70% {
-        opacity: 0;
+        opacity: .4;
     }
 
     100% {
