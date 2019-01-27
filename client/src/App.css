@@ -3,6 +3,12 @@
     letter-spacing: 1.5px;
     padding: 0;
     margin: 0;
+
+}
+
+body {
+  background-color: #fcfcfc;
+
 }
 
 h1 h2 h3 h4 h5 {
