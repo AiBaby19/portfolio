@@ -1,8 +1,11 @@
+import dataSec from './config/prod';
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const xoauth2 = require('xoauth2');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
+
 
 dotenv.config();
 const app = express();
@@ -28,12 +31,12 @@ if (process.env.NODE_ENV === 'production') {
 
 
 app.post('/contact/send', (req, res) => {
-
+  const password = 'W*v10yM-vkce"W=>.zAnTk3';
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: 'portfoliocontacts@gmail.com',//process.env.DB_USER,
-      pass: 'clients&&employees123$',
+      pass: password,
       xoauth2: xoauth2.createXOAuth2Generator({
         clientId: '452162742658-0404j7th55g9v6frvhabdnl4l156bf4j.apps.googleusercontent.com', //process.env.DB_CLIENTID,
         clientSecret: 'WcP34P0hgMf4b4IaqIgIylRH',
