@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Loader from '../loader/Loader';
 import './portfolioPage.css';
 
 const projects = [
@@ -51,20 +50,13 @@ class PortfolioList extends Component {
                                 border: 'solid 1px lightgrey'
                             }}>
                                 <div className="movie">
-                                    <div className="poster"><img onLoad={< Loader />} src={project.titleImg} alt={project.titleImgAlt} width="260" height="400"/></div>
+                                    <div className="poster"><img src={project.titleImg} alt={project.titleImgAlt} width="260" height="400"/></div>
                                     <div onClick={() => window.open(project.link)} className="info">
                                         <div>
                                         <img className="innerImg"
-                                            onLoad={< Loader />}
                                             src={project.bigImg}
                                             alt={project.bigImgAlt}
-                                            // style={{width: "100%", height: "100%"}}
-                                            // width="100%"
-                                            // height="170"
-                                            /> {/* <h1>{project.title}</h1> */}
-                                        {/* <span className="year">1946</span>
-                        <span className="rating">PG</span>
-                        <span className="duration">130 minutes</span> */}
+                                            /> 
                                             </div>
                                         <p>
                                             {project.details}

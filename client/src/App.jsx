@@ -1,4 +1,4 @@
-import React, {Component, StrictMode} from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import PortfolioPage from './components/portfoliopage/PortfolioPage';
@@ -30,7 +30,8 @@ class App extends Component {
         const thisProps = this.state.after;
 
         return (
-                <StrictMode>
+                // <StrictMode>
+                    <div>
                     {this.state.isButtonOn
                         ? (
                             <div>
@@ -77,8 +78,8 @@ class App extends Component {
                                 {/* </div> */}
                             </div>
                         </div>}
-
-                </StrictMode>
+                        </div>
+               
         );
     }
 }
