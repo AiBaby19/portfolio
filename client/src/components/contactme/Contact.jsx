@@ -49,9 +49,9 @@ class Contact extends Component {
             },
 
             body: JSON.stringify({name: name, email: email, message: message})
-        })
+        }).then(toast.warn("We'll be in touch!"))
 
-        toast.warn("We'll be in touch!");
+        
         this.setState({name: '', email: '', message: ''});
     };
 
@@ -101,6 +101,7 @@ class Contact extends Component {
                 <form className='form' action="/contact/send" method="POST">
                     {placeHolders.map(({type, name, placeholder, value, onChange}) => {
                         return (<input
+                            key={placeholder}
                             type={type}
                             name={name}
                             placeholder={placeholder}
@@ -119,6 +120,7 @@ class Contact extends Component {
                 <div className="social-icons-div">
                     {socialImg.map(({img, altImg, link}) => {
                         return (<img
+                            key={altImg}
                             src={img}
                             alt={altImg}
                             height="50"

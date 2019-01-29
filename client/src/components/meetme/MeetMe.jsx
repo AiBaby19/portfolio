@@ -108,7 +108,7 @@ class MeetMe extends Component {
                            
                             {techSkills.map(({ skill, img, perc }) => {
                                 return (
-                                    <div className="number-icons">
+                                    <div key={skill} className="number-icons">
                                         <div>
                                             <img src={img} height="50px" width="40px" alt={skill}/>
                                         </div>
@@ -125,7 +125,7 @@ class MeetMe extends Component {
 
                             {softSkills.map(({ skill, img, perc, style }) => {
                                 return (
-                                    <div className="number-icons">
+                                    <div  key={skill} className="number-icons">
                                         <div>
                                             <img src={img} height="50px" width="40px" alt={skill}
                                             style={{style} = "PROBLEM SOLVING" ? rotate : null}/>

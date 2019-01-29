@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Loader from '../loader/Loader';
+// import Loader from '../loader/Loader';
 import './modal.css';
 
 class Modal extends Component {
@@ -30,7 +30,7 @@ class Modal extends Component {
                 <div className="outer-modal-div">
                     <button className="btn-close-modal" onClick={(e) => this.closeThisModal(e)}>X</button>
                     <div className="inner-modal-div" ref={node => this.node = node}>
-                        <h1 class="certification-headline">{certifications[index].title}</h1>
+                        <h1 className="certification-headline">{certifications[index].title}</h1>
                         <div className="img-info-div">
                             <p className="certification-info">{certifications[index].details}</p>
                             <div
@@ -40,7 +40,7 @@ class Modal extends Component {
                             }}>
                                 <div className="certification-image">
                                     <a target="#" rel="noopener noreferrer" href={certifications[index].link}><img
-                                        onLoad={< Loader />}
+                                        // onLoad={< Loader />}
                                         src={certifications[index].bigImg}
                                         alt={certifications[index].bigImgAlt}
                                         height='250px'
@@ -49,9 +49,6 @@ class Modal extends Component {
                             </div>
                             <a target="#" rel="noopener noreferrer" href={certifications[index].link}className="certification-link">Watch Certification</a>
                         </div>
-                        {/* <div style={{margin: 'auto 0', textAlign: 'center'}}>
-              <button style={{border: 'solid 1px lightgrey', width: '150px', height: '30px'}} onClick={()=>console.log('hi')}><a href={certifications[index].link}>Watch</a></button>
-            </div> */}
                     </div>
                 </div>
             </div>

@@ -18,8 +18,7 @@
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "nodemailer": "^4.7.0",
-    "nodemon": "^1.18.9",
-    "xoauth2": "^1.2.0"
+    "nodemon": "^1.18.9"
   },
   "devDependencies": {
     "concurrently": "^4.1.0"
