@@ -46,11 +46,11 @@ app.post('/contact/send', (req, res) => {
 
   transporter.sendMail(mailOptions, (err, respond) => {
     if (err) {
-      transporter.close();
+      // transporter.close();
       console.log('ERROR', err);
   
     } else {
-      transporter.close();
+      // transporter.close();
       console.log('Email Sent', respond);
 
     }
