@@ -54,7 +54,7 @@ class App extends Component {
                                 </BrowserRouter>
                             </div>
                         )
-                        : <div
+                        : <div 
                             style={{
                             backgroundColor: "black",
                             height: '100vh',
@@ -66,10 +66,9 @@ class App extends Component {
                             : null}>
                             <div className="container">
                             {/* <div> */}
-                                
+                                <div className="switchHolder">
                                     <h1 className="switchMeHeadline"
                                     >SWITCH ME</h1>
-                                    <div className="switchHolder">
                                         <div className="switch" onClick={this.toggleSwitch}>
                                             <input type="checkbox" name=""/>
                                             <label></label>
