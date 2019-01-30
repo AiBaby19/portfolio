@@ -2,6 +2,9 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
+require('./config/prod')
+// const smtpTransport = require('nodemailer-smtp-transport');
+
 
 dotenv.config();
 const app = express();
@@ -12,35 +15,38 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-console.log('checker')
+console.log(process.env.REACT_APP_USER)
 app.post('/contact/send', (req, res) => {
-  
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
+    // host: smtp.gmail.com,
+
+    auth: {
+      user: process.env.REACT_APP_USER,
+      pass: process.env.REACT_APP_PASS,
+      // clientId: process.env.CLIENT_ID,
+      // clientSecret: process.env.CLIENT_SECRET,
+      // refreshToken: process.env.REFRESH_TOKEN,
+    },
 
     tls: {
       rejectUnauthorized: false,
     },
     
-    auth: {
-      type: 'OAuth2',
-      user: process.env.USER,
-      pass: process.env.PASS,
-      clientId: process.env.CLIENT_ID,
-      clientSecret: process.env.CLIENT_SECRET,
-      refreshToken: process.env.REFRESH_TOKEN,
-    },
+  
   });
 
   const mailOptions = {
     from: `${req.body.email}`,
-    to: 'drordvash4@gmail.com',
+    to: 'portfoliocontacts@gmail.com',
     subject: `${req.body.name}`,
     text: `${req.body.message}`,
   };
 
+
   transporter.sendMail(mailOptions, (err, respond) => {
+    console.log(respond)
     if (err) {
       // transporter.close();
       console.log('ERROR', err);
@@ -51,7 +57,7 @@ app.post('/contact/send', (req, res) => {
       // });
     } else {
       // transporter.close();
-      console.log('Email Sent', respond.data);
+      console.log('Email Sent', respond);
       // return res.json({
       //   status: 'ok',
       //   msg: "Email sent"
@@ -60,7 +66,6 @@ app.post('/contact/send', (req, res) => {
   });
 
   res.status(202).send(res.data);
-
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
