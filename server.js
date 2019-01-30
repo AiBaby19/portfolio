@@ -35,13 +35,13 @@ app.post('/contact/send', (req, res) => {
     
   
   });
-
   const mailOptions = {
     from: `${req.body.email}`,
     to: 'portfoliocontacts@gmail.com',
     subject: `${req.body.name}`,
-    text: `${req.body.message}`,
+    text: `${req.body.message}, Email: ${req.body.email}`,
   };
+  console.log('mailOptions', mailOptions);
 
 
   transporter.sendMail(mailOptions, (err, respond) => {
