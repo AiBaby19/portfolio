@@ -49,10 +49,13 @@ class Contact extends Component {
             },
 
             body: JSON.stringify({name: name, email: email, message: message})
-        }).then(toast.warn("We'll be in touch!"))
+        }).then(()=>{
+            toast.warn("We'll be in touch!")
+            this.setState({name: '', email: '', message: ''});
+        })
 
         
-        this.setState({name: '', email: '', message: ''});
+        
     };
 
     render() {
